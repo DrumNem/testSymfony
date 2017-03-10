@@ -1,0 +1,15 @@
+input:
+    resource: "@InputBundle/Resources/config/routing.php"
+    prefix:   /
+
+news_index:
+    path: "/"
+    defaults:  { _controller: InputBundle:Default:index}
+
+test_form:
+    path: "/form"
+    defaults: { _controller: InputBundle:Default:add}
+
+show_post:
+    path: "/show"
+    defaults: {}
