@@ -38,8 +38,7 @@ class DefaultController extends Controller
         $posts = $this->getDoctrine()
             ->getRepository('InputBundle:PostField');
         if (!$posts){
-            throw $this->createNotFoundException('FML');
+            throw $this->createNotFoundException('[FAIL] Fetching post from DB');
         }
-
     }
 }

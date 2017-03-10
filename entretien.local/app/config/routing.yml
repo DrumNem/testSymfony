@@ -9,7 +9,3 @@ news_index:
 test_form:
     path: "/form"
     defaults: { _controller: InputBundle:Default:add}
-
-show_post:
-    path: "/show"
-    defaults: {}
